@@ -38,8 +38,8 @@ const Shoes = ({ item, value }) => {
   console.log(jsonData[value])
   return (
     <div className="shoes-wrap">
-      <div style={{backgroundColor:item.color}} className="shoes">
-        <img src={item.image} alt="hinhanh"></img>
+      <div  className="shoes">
+        <img style={{ backgroundColor: item.color, borderRadius:"20px 20px 0 0" }} src={item.image} alt="hinhanh"></img>
         <h1>{item.name}</h1>
         <span className="description">{item.description}</span>
         <span className="price">${item.price}</span>

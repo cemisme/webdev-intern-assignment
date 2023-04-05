@@ -504,6 +504,7 @@ footer {
   display: block;
   height: 250px;
   object-fit: cover;
+  padding: 20px;
 }
 .description {
   padding: 0 18px;
@@ -520,10 +521,10 @@ footer {
 }
 
 .shoes:hover {
-  box-shadow: 5px 0px 10px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 0px 5px 5px rgba(0, 0, 0, 0.2);
   transform-origin: top right;
   cursor: pointer;
-  transition: ease-out 0.3s;
+  transition: ease-out 0.2s;
 }
 .price {
   margin-top: 30px;
@@ -588,7 +589,7 @@ footer {
   border-radius: 50%;
   background-color: #fff;
   display: block;
-  background-color: rgba(255, 0, 0, 0.9);
+  background-color: rgba(255, 0, 0, 0.7);
   padding: 3px 2px;
 }
 .number {

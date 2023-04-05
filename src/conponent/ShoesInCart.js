@@ -28,11 +28,11 @@ const ShoesInCart = ({ img, price, color, name, description, id }) => {
   };
   return (
     <div className="shoes-wrap">
-      <div style={{ backgroundColor: color }} className="shoes">
-        <img src={img} alt="hinhanh"></img>
+      <div  className="shoes">
+        <img style={{ backgroundColor: color, borderRadius:"20px 20px 0 0" }} src={img} alt="hinhanh"></img>
         <h1>{name}</h1>
         <span className="description">{description}</span>
-        <span className="price">${price * (count + 1)}</span>
+        <span className="price">${(price * (count + 1)).toFixed(2)}</span>
         <div className="count">
           <span className={decre ? "decre" : "disable"}>
             <svg
@@ -75,7 +75,7 @@ const ShoesInCart = ({ img, price, color, name, description, id }) => {
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            stroke-width="1.5"
+            stroke-width="0.9"
             stroke="currentColor"
             class="w-6 h-6"
           >
